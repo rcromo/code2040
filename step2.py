@@ -12,13 +12,10 @@ def reverse(string):
 	slice_rev = slice(start, end, step)
 	return string[slice_rev]
 
-
-
- r_1 = requests.post(endpoint, data = {'token': api_token})
- reverse_api= reverse(r_1.text)
-
- r_2 = requests.post(post_to, data = {'token': api_token, 'reversed': reverse_api})
- print(r_2.text)
+r_1 = requests.post(endpoint, data = {'token': api_token})
+reverse_api= r_1.text
+r_2 = requests.post(post_to, data = {'token': api_token, 'string': reverse_api})
+print(r_2.text)
 
 
 
