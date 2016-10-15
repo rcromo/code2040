@@ -5,6 +5,7 @@ endpoint = "http://challenge.code2040.org/api/reverse"
 post_to = "http://challenge.code2040.org/api/reverse/validate"
 
 ## Essentially 'string'[::-1]
+## but for readability used the following
 ## Reverse a string
 def reverse(string):
 	start = end = None
