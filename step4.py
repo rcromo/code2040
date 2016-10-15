@@ -14,6 +14,7 @@ array_of_words = dictionary['array']
 
 not_prefix = []
 
+
 def not_that_prefix():
 	i = 0
 	while i < len(array_of_words):
@@ -23,6 +24,7 @@ def not_that_prefix():
 	return not_prefix ;
 
 updated_array = not_that_prefix();
+
 
 payload = {}
 payload['token'] = api_token
