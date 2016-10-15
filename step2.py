@@ -13,7 +13,7 @@ def reverse(string):
 	return string[slice_rev]
 
 r_1 = requests.post(endpoint, data = {'token': api_token})
-reverse_api= r_1.text
+reverse_api = reverse(r_1.text)
 r_2 = requests.post(post_to, data = {'token': api_token, 'string': reverse_api})
 print(r_2.text)
 
