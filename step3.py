@@ -11,7 +11,6 @@ dictionary  = r_1.json()
 needle = dictionary['needle']
 haystack = dictionary['haystack']
 
-
 def find_needle():
 	i = 0
 	while i < len(haystack):
